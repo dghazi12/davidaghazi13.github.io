@@ -10,7 +10,7 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="/assests/css/burger_style.css">
 
-  <title>Document</title>
+  <title>Eat-Da-Burger</title>
 
 </head>
 
@@ -25,14 +25,16 @@
     <div class="col-sm-6">
 
       <ul>
+
         {{#each burgers}}
         {{#unless devoured}}
         <span><strong> {{this.id}} - {{this.burger_name}} </strong></span>
-        <button type="button" class="eatburger btn btn-warning" id="eatbutton" data-id="{{this.id}}"
+        <button type="button" class="devour btn btn-dark" data-id="{{this.id}}"
           data-newDevoured="{{devour}}"><span class="devoured fa fa-cutlery"></span>Devour</button>
         <hr>
         {{/unless}}
         {{/each}}
+
       </ul>
 
     </div>
@@ -40,14 +42,16 @@
     <div class="col-sm-6">
 
       <ul>
+
         {{#each burgers}}
         {{#if devoured}}
         <span><strong> {{this.id}} - {{this.burger_name}} </strong></span>
-        <button type="button" class="trashburger btn btn-danger" id="trashbutton" data-id="{{this.id}}"
+        <button type="button" class="delete btn btn-danger" data-id="{{this.id}}"
           data-newDevoured="{{devour}}"><span class="fa fa-trash"></span>Delete</button>
         <hr>
         {{/if}}
         {{/each}}
+
       </ul>
 
     </div>
@@ -64,9 +68,9 @@
       <button type="submit" class="btn btn-primary" id="addburger">Submit</button>
       <br>
 
-      <label for="newburger" id="color-override">Enter a burger you would like to eat! Click the "Submit"
+      <label for="newburger">Enter a burger you would like to eat! Click the "Submit"
         button.</label>
-        
+
     </div>
 
   </form>
