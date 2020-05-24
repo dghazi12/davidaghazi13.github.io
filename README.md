@@ -35,7 +35,7 @@ Next, install the application dependencies:
 
     npm install
 
-Lastly, start the application server using the command line below
+Lastly, start the application server using the command line below:
 
     node server.js
 
