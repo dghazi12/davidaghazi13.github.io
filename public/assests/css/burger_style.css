@@ -1,3 +1,44 @@
+#burgerimg {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin: auto auto;
+}
+
 body {
     background-color: #FEBF1B;
+}
+
+#title{
+    font-family: 'Piedra', cursive;
+    margin-top: 300px;
+    margin-left: 400px;
+}
+
+.text{
+    font-family: 'Chelsea Market', cursive;
+    margin-left: 10px;
+}
+
+#enterburger{
+    font-family: 'Bitter', serif;
+}
+
+.delete{
+    margin-left: 150px;
+}
+
+#newburger{
+   width: 300px;
+   margin-left: 340px;
+}
+
+#enterburger{
+    margin-left: 340px;
+    margin-top: 10px;
+}
+
+#addburger{
+    margin-left: 10px;
 }

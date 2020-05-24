@@ -8,6 +8,8 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bitter&family=Piedra&family=Teko&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/assests/css/burger_style.css">
 
   <title>Eat-Da-Burger</title>
@@ -18,7 +20,24 @@
 
   <img src="assests/img/burger.jpg" id="burgerimg" alt="burger-picture" width="300" height="300">
 
-  <h1>Eat-Da-Burger!</h1>
+  <h1 id="title">Eat-Da-Burger!</h1>
+
+  <form class="create-form">
+
+    <div class="form-group">
+
+      <input type="text" id="newburger" name="burger">
+
+      <button type="submit" class="btn btn-primary" id="addburger">Submit</button>
+
+      <br>
+
+      <label for="newburger" id="enterburger">Enter a burger you would like to eat! <br> Click the "Submit"
+      button.</label>
+
+    </div>
+
+  </form>
 
   <div class="row">
 
@@ -28,9 +47,9 @@
 
         {{#each burgers}}
         {{#unless devoured}}
-        <span><strong> {{this.id}} - {{this.burger_name}} </strong></span>
         <button type="button" class="devour btn btn-dark" data-id="{{this.id}}"
           data-newDevoured="{{devour}}"><span class="devoured fa fa-cutlery"></span>Devour</button>
+        <span class="text"><strong> {{this.id}} - {{this.burger_name}} </strong></span>
         <hr>
         {{/unless}}
         {{/each}}
@@ -45,9 +64,9 @@
 
         {{#each burgers}}
         {{#if devoured}}
-        <span><strong> {{this.id}} - {{this.burger_name}} </strong></span>
         <button type="button" class="delete btn btn-danger" data-id="{{this.id}}"
           data-newDevoured="{{devour}}"><span class="fa fa-trash"></span>Delete</button>
+        <span class="text"><strong> {{this.id}} - {{this.burger_name}} </strong></span>
         <hr>
         {{/if}}
         {{/each}}
@@ -57,23 +76,6 @@
     </div>
 
   </div>
-
-  <form class="create-form">
-
-    <div class="form-group">
-
-      <input type="text" id="newburger" name="burger">
-      <br>
-
-      <button type="submit" class="btn btn-primary" id="addburger">Submit</button>
-      <br>
-
-      <label for="newburger">Enter a burger you would like to eat! Click the "Submit"
-        button.</label>
-
-    </div>
-
-  </form>
 
 </body>
 
