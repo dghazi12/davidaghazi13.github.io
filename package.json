@@ -1,7 +1,4 @@
 {
-  "engines": {
-  "node": "12.16.x"
-  },
   "name": "burgerlogger",
   "version": "1.0.0",
   "description": "Eat-Da-Burger",
@@ -25,5 +22,8 @@
     "express-handlebars": "^4.0.4",
     "handlebars-helper-css": "^0.1.0",
     "mysql": "^2.18.1"
+  },
+  "engines": {
+    "node": "12.14.1"
   }
 }
