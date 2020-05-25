@@ -1,5 +1,4 @@
 {
-  "engines" : { "node" : ">=0.12" },
   "name": "burgerlogger",
   "version": "1.0.0",
   "description": "Eat-Da-Burger",
