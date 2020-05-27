@@ -25,6 +25,8 @@ In this assignment, you'll create a burger logger with MySQL, Node, Express, Han
 
 The link below will give you access to the web application via the Heroku web service:
 
+https://ghazi-burger-logger.herokuapp.com/
+
 ## Local Environment Installation
 
 To run the application locally, first clone this repository with the following command: 
